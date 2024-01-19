@@ -4,7 +4,7 @@ body {
   background-color: #eeeeee;
   font-family: 'Oxygen', sans-serif;
 }
-
+ 
 
 /** HEADER **/
 #header-nav {
@@ -20,12 +20,6 @@ body {
   height: 150px;
   margin: 10px 15px 10px 0;
 }
-/*
-.navbar-brand {
-  padding-top: 25px;
-}
-*/
-
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
@@ -36,9 +30,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-  position: absolute;
-  left: 5%;
-  padding-left: 15px;
+  width: 100%;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -104,6 +96,12 @@ body {
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+
+h1{
+  position: relative;
+  float: left;
+  margin-left: 15px;
+}
 /* END FOOTER */
 
 /* start of main content */
@@ -142,9 +140,7 @@ h3{
 
 /* end of main content */
 
-#collapsable-nav:target ~ #main-content {
-  margin-top: 200px; /* Ajuste conforme necessário */
-}
+
 
 /* HOME PAGE */
 
