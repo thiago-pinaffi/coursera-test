@@ -28,19 +28,35 @@ assignment.
 WARNING!!! WARNING!!!
 
 */
+(function(){
 
-// STEP 1:
-// Wrap the entire contents of script.js inside of an IIFE
-// See Lecture 52, part 2
-// (Note, Step 2 will be done in the SpeakHello.js file.)
 
-var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+  // STEP 1:
+  // Wrap the entire contents of script.js inside of an IIFE
+  // See Lecture 52, part 2
+  // (Note, Step 2 will be done in the SpeakHello.js file.)
+  var first_stap = {};
+  first_stap.names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+  for (nome in first_stap.names){
+    if (first_stap.names[nome][0].toLocaleLowerCase() == "j"){
+      helloSpeaker.speak(first_stap.names[nome]);
+      
+    }
+    else{
+      byeSpeaker.speak(first_stap.names[nome]);
+    }
+    
+  }
+
+  
+})();
 
 // STEP 10:
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using either the helloSpeaker's or byeSpeaker's 'speak' method.
 // See Lecture 50, part 1
-for (/* fill in parts of the 'for' loop to loop over names array */) {
+//for (/* fill in parts of the 'for' loop to loop over names array */) {
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
@@ -56,9 +72,9 @@ for (/* fill in parts of the 'for' loop to loop over names array */) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  if (/* fill in condition here */) {
+  //if (/* fill in condition here */) {
     // byeSpeaker.xxxx
-  } else {
+  //} else {
     // helloSpeaker.xxxx
-  }
-}
+  //}
+//}
