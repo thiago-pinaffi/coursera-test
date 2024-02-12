@@ -40,11 +40,11 @@ WARNING!!! WARNING!!!
 
   for (nome in first_stap.names){
     if (first_stap.names[nome][0].toLocaleLowerCase() == "j"){
-      helloSpeaker.speak(first_stap.names[nome]);
+      byeSpeaker.speak(first_stap.names[nome]);
       
     }
     else{
-      byeSpeaker.speak(first_stap.names[nome]);
+      helloSpeaker.speak(first_stap.names[nome]);
     }
     
   }
